@@ -8,5 +8,13 @@ user_secondnumber = input("Your second (whole) number:")
 #print(user_firstnumber)
 
 if user_operator =="+":
-    result = int(user_firstnumber) + int(user_secondnumber)
-    print(result)
+    result = int(user_firstnumber) + int(user_secondnumber) 
+elif user_operator =="-":
+    result = int(user_firstnumber) - int(user_secondnumber)
+elif user_operator =="/":
+    result = int(user_firstnumber) / int(user_secondnumber)
+else: 
+    user_operator =="*"
+    result = int(user_firstnumber) * int(user_secondnumber)
+
+print("The result is:", result)
