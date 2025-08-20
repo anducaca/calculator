@@ -38,7 +38,7 @@ def main():
         print("1. Add a new purchase")
         print("2. View all purchases")
         print("3. Delete a purchase")
-        print("4. View current purchases and balance")
+        print("4. View balance")
         print("5. Exit")
 
         choice = input("Select an option (1-5): ")
@@ -49,7 +49,7 @@ def main():
             amount = float(input("How much did this cost? "))
 
             transactions.append({"description": description, "date": date, "amount": amount})
-            balance += amount
+            balance -= amount
             save_data(balance, transactions)
             print("Thank you. Purchase added and saved.")
 
@@ -73,7 +73,7 @@ def main():
                 # Adjust balance and delete the transaction
                 if 1 <= index <= len(transactions):
                     removed = transactions.pop(index - 1)
-                    balance -= removed["amount"]
+                    balance += removed["amount"]
                     save_data(balance, transactions)
                     print("Purchase deleted and balance updated.")
                 else:
