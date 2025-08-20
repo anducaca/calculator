@@ -1,0 +1,15 @@
+{
+    "balance": 12074.32,
+    "transactions": [
+        {
+            "description": "LIDL (middle of)",
+            "date": "2025-08-19",
+            "amount": 54.32
+        },
+        {
+            "description": "Sausages at Spurgeons butchers",
+            "date": "2025-08-17",
+            "amount": 20.0
+        }
+    ]
+}
